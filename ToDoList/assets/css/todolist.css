@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #ffd89b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #19547b, hsl(37, 100%, 80%));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+#contenido {
+    width: 360px;
+    margin: 6% auto;
+    border: 2px solid gray;
+    background-color: #f7f7f7;
+    -moz-box-shadow:    2px 2px 5px 6px #ccc;
+  -webkit-box-shadow: 2px 2px 5px 6px #ccc;
+  box-shadow:         2px 2px 5px 6px #ccc;
+}
+
+/* agrego la clase completa para tachar los items que voy clickeando*/
+
+.completado {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+h1 {
+    background-color: #2980b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    padding-left: 10px;
+  }
+
+  li:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+
+  input {
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    border: none;
+  }
+
+  input:focus {
+    background-color: #fff;
+    outline: none;
+    border: 3px solid #2980b9;
+  }
+
+  .fa-clipboard-list{
+      float: right;
+  }
+
+
+  span {
+    background-color: #e74c3c;
+    color: white;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+  }
+  
+  li:hover span {
+    width: 40px;
+    opacity: 1;
+   }
